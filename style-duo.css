@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("1543788.jpg");
+    background-size: cover;
+}
+
+.sidenav {
+    border-radius: 16px;
+    margin-top: 49px;
+    margin-left: 200px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+
+    overflow-x: hidden;
+}
+.sidenav a {
+    color: white;
+    padding: 17px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.effect a:hover {
+    background-color: transparent ;
+    color: white;
+
+}
+.content {
+    margin-top: 49px;
+    margin-left: 400px;
+    padding-left: 50px;
+    color: white;
+
+
+}
+.slika{
+    height: 300px;
+    width: 300px;
+
+
+}
+img {
+    border-radius: 16px;
+    padding: 5px;
+    width: 150px;
+    margin-left: 55px;
+}
+.effect a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: hotpink;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.effect a:hover::after{
+    width: 100%;
+}
+.content h2{
+    font-size: 50px;
+}
+.content p{
+    font-size: 30px;
+}
+.slika p{
+    margin-left: 55px;
+    font-size: 16px;
+}
